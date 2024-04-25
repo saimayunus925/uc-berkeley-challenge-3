@@ -1,6 +1,10 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max); // MDN web docs function for getting a random integer between 0 and (max - 1): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+}
+
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
